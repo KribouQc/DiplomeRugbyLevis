@@ -1,0 +1,114 @@
+/* main.css */
+body {
+    margin: 2em;
+    font-family: helvetica;
+    font-weight: bold;
+  }
+
+#cadre{
+    height: 850px;
+    width: 1100px;
+    border:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#gauche{
+    height: 100%;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+
+#gauche::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("logoLevis.jpeg");
+    background-size: 20%;
+    background-repeat: repeat;
+}
+
+.rouge{
+    color:red;
+    margin: auto;
+    rotate: 15deg;
+    font-size: 25px;
+    opacity: 1;
+}
+
+.bleu{
+    color:blue;
+    margin: auto;
+    rotate: -15deg;
+    font-size: 25px;
+}
+
+#centre{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo{
+    margin-top: 30px;
+    height: 40%;
+    text-align: center;
+}
+
+
+img{
+    width: 40%;
+}
+
+.texte_diplome{
+    margin-top: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.nom{
+    font-size: 20px;
+}
+
+.date{
+    font-size: 20px;
+}
+
+#droite{
+    height: 100%;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#droite::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url("logoLevis.jpeg");
+    background-size: 20%;
+    background-repeat: repeat;
+}
+  /* override styles when printing */
+  @media print {
+  
+    body {
+        margin: 0;
+    }
+
+       
+  }
