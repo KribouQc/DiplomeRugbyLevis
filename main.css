@@ -79,6 +79,14 @@ img{
     font-size: 20px;
 }
 
+.saisie{
+    border: hidden; 
+    border-bottom: 1px dashed black;
+    text-align: left;
+    font-family: helvetica;
+    font-weight: bold;
+}
+
 .date{
     font-size: 20px;
 }
