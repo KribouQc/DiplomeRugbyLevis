@@ -38,7 +38,7 @@
             </div>
             <div class="texte_diplome">Diplôme de Rugby</div>
             <div class="texte_diplome nom">pour <input oninput="this.size = this.value.length" class="texte_diplome nom saisie" value=""/></div>
-            <div class="texte_diplome date">Fait le : 30/11/2022</div>
+            <div class="texte_diplome date">Fait le : <input id="date" oninput="this.size = this.value.length" class="texte_diplome nom saisie" value=""/></div>
         </div>
         <div id="droite">
             <div class="rouge">
@@ -61,5 +61,12 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript"> 
+        var dateJour = new Date();
+        var dateString = dateJour.getDay() + "/" + dateJour.getMonth() + "/" + dateJour.getFullYear();
+        document.getElementById("date").setAttribute('value',dateString);
+        document.getElementById("date").setAttribute('size',dateString.length);
+      </script>
 </body>
 </html>
